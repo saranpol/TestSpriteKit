@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
 
-    SKView *spriteView = (SKView *) self.view;
+    SKView *spriteView = (SKView *)self.view;
     spriteView.showsDrawCount = YES;
     spriteView.showsNodeCount = YES;
     spriteView.showsFPS = YES;
@@ -40,7 +40,7 @@
     CGFloat w = screenRect.size.width;
     CGFloat h = screenRect.size.height;
     CGSize s;
-    if(w>h)
+    if(w<h)
         s = CGSizeMake(w, h);
     else
         s = CGSizeMake(h, w);

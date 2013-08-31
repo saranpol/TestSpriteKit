@@ -23,6 +23,7 @@
 		4344696A17CC55C400EAC059 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4344696817CC55C400EAC059 /* InfoPlist.strings */; };
 		4344696C17CC55C400EAC059 /* SpriteWalkthroughTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344696B17CC55C400EAC059 /* SpriteWalkthroughTests.m */; };
 		4344697B17CC57BB00EAC059 /* HelloScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344697A17CC57BB00EAC059 /* HelloScene.m */; };
+		435B181F17D05596006D3E29 /* SpaceshipScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 435B181E17D05596006D3E29 /* SpaceshipScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		4344696B17CC55C400EAC059 /* SpriteWalkthroughTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteWalkthroughTests.m; sourceTree = "<group>"; };
 		4344697917CC57BB00EAC059 /* HelloScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloScene.h; sourceTree = "<group>"; };
 		4344697A17CC57BB00EAC059 /* HelloScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloScene.m; sourceTree = "<group>"; };
+		435B181D17D05596006D3E29 /* SpaceshipScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceshipScene.h; sourceTree = "<group>"; };
+		435B181E17D05596006D3E29 /* SpaceshipScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceshipScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 		4344694317CC55C400EAC059 /* SpriteWalkthrough */ = {
 			isa = PBXGroup;
 			children = (
+				435B181C17D05589006D3E29 /* SpaceshipScene */,
 				4344697817CC57BB00EAC059 /* HelloScene */,
 				4344694C17CC55C400EAC059 /* SpriteAppDelegate.h */,
 				4344694D17CC55C400EAC059 /* SpriteAppDelegate.m */,
@@ -166,6 +170,15 @@
 				4344697A17CC57BB00EAC059 /* HelloScene.m */,
 			);
 			path = HelloScene;
+			sourceTree = "<group>";
+		};
+		435B181C17D05589006D3E29 /* SpaceshipScene */ = {
+			isa = PBXGroup;
+			children = (
+				435B181D17D05596006D3E29 /* SpaceshipScene.h */,
+				435B181E17D05596006D3E29 /* SpaceshipScene.m */,
+			);
+			path = SpaceshipScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +282,7 @@
 			files = (
 				4344694A17CC55C400EAC059 /* main.m in Sources */,
 				4344697B17CC57BB00EAC059 /* HelloScene.m in Sources */,
+				435B181F17D05596006D3E29 /* SpaceshipScene.m in Sources */,
 				4344694E17CC55C400EAC059 /* SpriteAppDelegate.m in Sources */,
 				4344695717CC55C400EAC059 /* SpriteViewController.m in Sources */,
 			);

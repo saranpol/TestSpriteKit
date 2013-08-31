@@ -7,7 +7,7 @@
 //
 
 #import "HelloScene.h"
-
+#import "SpaceshipScene.h"
 
 @interface HelloScene ()
 @property BOOL contentCreated;
@@ -54,7 +54,13 @@
         SKAction *fadeAway = [SKAction fadeOutWithDuration: 0.25];
         SKAction *remove = [SKAction removeFromParent];
         SKAction *moveSequence = [SKAction sequence:@[moveUp, zoom, pause, fadeAway, remove]];
-        [helloNode runAction: moveSequence];
+        //[helloNode runAction: moveSequence];
+        
+        [helloNode runAction: moveSequence completion:^{
+            SKScene *spaceshipScene  = [[SpaceshipScene alloc] initWithSize:self.size];
+            SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.5];
+            [self.view presentScene:spaceshipScene transition:doors];
+        }];
     }
 }
 
