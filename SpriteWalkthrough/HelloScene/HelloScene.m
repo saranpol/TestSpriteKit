@@ -30,6 +30,11 @@
     self.backgroundColor = [SKColor blueColor];
     self.scaleMode = SKSceneScaleModeAspectFit;
     [self addChild:[self newHelloNode]];
+    
+    SKSpriteNode *spaceship = [SKSpriteNode spriteNodeWithImageNamed:@"rocket.png"];
+    spaceship.position = CGPointMake(100,100);
+    [self addChild:spaceship];
+    
 }
 
 - (SKLabelNode *)newHelloNode

@@ -24,6 +24,8 @@
 		4344696C17CC55C400EAC059 /* SpriteWalkthroughTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344696B17CC55C400EAC059 /* SpriteWalkthroughTests.m */; };
 		4344697B17CC57BB00EAC059 /* HelloScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4344697A17CC57BB00EAC059 /* HelloScene.m */; };
 		435B181F17D05596006D3E29 /* SpaceshipScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 435B181E17D05596006D3E29 /* SpaceshipScene.m */; };
+		43B135BC17D1F879005C3C71 /* rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B135BA17D1F879005C3C71 /* rocket.png */; };
+		43B135BD17D1F879005C3C71 /* rocket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B135BB17D1F879005C3C71 /* rocket@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		4344697A17CC57BB00EAC059 /* HelloScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloScene.m; sourceTree = "<group>"; };
 		435B181D17D05596006D3E29 /* SpaceshipScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceshipScene.h; sourceTree = "<group>"; };
 		435B181E17D05596006D3E29 /* SpaceshipScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceshipScene.m; sourceTree = "<group>"; };
+		43B135BA17D1F879005C3C71 /* rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocket.png; sourceTree = "<group>"; };
+		43B135BB17D1F879005C3C71 /* rocket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocket@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		4344694317CC55C400EAC059 /* SpriteWalkthrough */ = {
 			isa = PBXGroup;
 			children = (
+				43B135B917D1F879005C3C71 /* Images */,
 				435B181C17D05589006D3E29 /* SpaceshipScene */,
 				4344697817CC57BB00EAC059 /* HelloScene */,
 				4344694C17CC55C400EAC059 /* SpriteAppDelegate.h */,
@@ -179,6 +184,15 @@
 				435B181E17D05596006D3E29 /* SpaceshipScene.m */,
 			);
 			path = SpaceshipScene;
+			sourceTree = "<group>";
+		};
+		43B135B917D1F879005C3C71 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				43B135BA17D1F879005C3C71 /* rocket.png */,
+				43B135BB17D1F879005C3C71 /* rocket@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4344695417CC55C400EAC059 /* Main_iPad.storyboard in Resources */,
+				43B135BC17D1F879005C3C71 /* rocket.png in Resources */,
+				43B135BD17D1F879005C3C71 /* rocket@2x.png in Resources */,
 				4344695917CC55C400EAC059 /* Images.xcassets in Resources */,
 				4344695117CC55C400EAC059 /* Main_iPhone.storyboard in Resources */,
 				4344694817CC55C400EAC059 /* InfoPlist.strings in Resources */,
