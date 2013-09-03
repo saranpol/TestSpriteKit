@@ -11,7 +11,6 @@
 @interface SpaceshipScene ()
 @property BOOL contentCreated;
 @end
-
 @implementation SpaceshipScene
 
 - (void)didMoveToView:(SKView *)view
@@ -20,6 +19,16 @@
     {
         [self createSceneContents];
         self.contentCreated = YES;
+        
+        NSArray *subviewArray = [[NSBundle mainBundle] loadNibNamed:@"ViewControl" owner:self options:nil];
+        UIView *mainView = [subviewArray objectAtIndex:0];
+        CGRect vframe = mainView.frame;
+        float h = self.view.frame.size.height;
+        float vh = vframe.size.height;
+        vframe.origin.y = h-vh;
+        [mainView setFrame:vframe];
+        [self.view addSubview:mainView];
+        
     }
 }
 
@@ -115,6 +124,10 @@ static inline CGFloat skRand(CGFloat low, CGFloat high) {
     }];
 }
 
+
+- (IBAction)clickButton:(id)sender {
+    NSLog(@"test click");
+}
 
 
 

@@ -33,6 +33,7 @@
     
     SKSpriteNode *spaceship = [SKSpriteNode spriteNodeWithImageNamed:@"rocket.png"];
     spaceship.position = CGPointMake(100,100);
+    spaceship.anchorPoint = CGPointMake(0.5,0.0);
     [self addChild:spaceship];
     
 }

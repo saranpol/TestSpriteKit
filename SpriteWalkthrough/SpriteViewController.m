@@ -28,6 +28,10 @@
     spriteView.showsFPS = YES;
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -49,6 +53,8 @@
     SKView *spriteView = (SKView *)self.view;
     [spriteView presentScene:hello];
 }
+
+
 
 
 @end

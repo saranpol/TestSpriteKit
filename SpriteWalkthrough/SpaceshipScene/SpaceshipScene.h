@@ -10,4 +10,6 @@
 
 @interface SpaceshipScene : SKScene
 
+- (IBAction)clickButton:(id)sender;
+
 @end
